@@ -142,7 +142,7 @@ const ConfirmSwapModal: React.FC<React.PropsWithChildren<InjectedModalProps & Co
   if (!chainId || !trade) return null
 
   return (
-    <ConfirmSwapModalContainer handleDismiss={handleDismiss}>
+    <ConfirmSwapModalContainer handleDismiss={handleDismiss} style={{ background: '#070707' }}>
       {attemptingTxn ? (
         <ConfirmationPendingContent pendingText={pendingText} />
       ) : txHash ? (

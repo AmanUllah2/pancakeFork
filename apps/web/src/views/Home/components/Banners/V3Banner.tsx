@@ -216,44 +216,45 @@ const V3Banner = () => {
   const { t } = useTranslation()
   const { isMobile } = useMatchBreakpoints()
   return (
-    <S.Wrapper
-      style={{
-        background: `linear-gradient(114.79deg, #C040FC -17.76%, #4B3CFF 99.88%)`,
-      }}
-    >
-      <S.Inner>
-        <S.LeftWrapper>
-          <Title>{t('PancakeSwap V3')}</Title>
-          <StyledSubheading data-text={t('Claim $135K CAKE Airdrop & Exclusive NFT')}>
-            {t('Claim $135K CAKE Airdrop & Exclusive NFT')}
-          </StyledSubheading>
-          <NextLinkFromReactRouter
-            target="_blank"
-            to="https://blog.pancakeswap.finance/articles/participate-in-pancake-swap-v3-launch-claim-135-k-cake-airdrop-and-receive-an-exclusive-nft-for-early-supporters"
-            rel='"noopener noreferrer'
-          >
-            <StyledButtonLeft scale={isMobile ? 'sm' : 'md'}>
-              <Text bold fontSize="16px" mr="4px" color="invertedContrast">
-                {isMobile ? t('Learn More') : t('Learn More')}
-              </Text>
-              <OpenNewIcon color="invertedContrast" />
-            </StyledButtonLeft>
-          </NextLinkFromReactRouter>
-        </S.LeftWrapper>
-        <RightWrapper>
-          {!isMobile && <Image src={v3Board} alt="v3Board" width={141} height={111} placeholder="blur" />}
-          {!isMobile && <Image src={v3BgCoinUp} alt="v3BgCoinUp" width={149} height={47} placeholder="blur" />}
-          {!isMobile && <Image src={v3BgCoinDown} alt="v3BgCoinUp" width={187} height={75} placeholder="blur" />}
-          {!isMobile && <Image src={v3BgBlingBlur} alt="v3BgBlingBlur" width={53} height={55} placeholder="blur" />}
-          {!isMobile && <Image src={v3BgBlingNormal} alt="v3BgBlingNormal" width={52} height={48} placeholder="blur" />}
-          {isMobile ? (
-            <Image src={v3AirdropBunny} alt="v3AirdropBunnyMobile" width={195} height={199} placeholder="blur" />
-          ) : (
-            <Image src={v3AirdropBunny} alt="v3AirdropBunny" width={290} height={295} placeholder="blur" />
-          )}
-        </RightWrapper>
-      </S.Inner>
-    </S.Wrapper>
+    <></>
+    // <S.Wrapper
+    //   style={{
+    //     background: `linear-gradient(114.79deg, #C040FC -17.76%, #4B3CFF 99.88%)`,
+    //   }}
+    // >
+    //   <S.Inner>
+    //     <S.LeftWrapper>
+    //       <Title>{t('PancakeSwap V3')}</Title>
+    //       <StyledSubheading data-text={t('Claim $135K CAKE Airdrop & Exclusive NFT')}>
+    //         {t('Claim $135K CAKE Airdrop & Exclusive NFT')}
+    //       </StyledSubheading>
+    //       <NextLinkFromReactRouter
+    //         target="_blank"
+    //         to="https://blog.pancakeswap.finance/articles/participate-in-pancake-swap-v3-launch-claim-135-k-cake-airdrop-and-receive-an-exclusive-nft-for-early-supporters"
+    //         rel='"noopener noreferrer'
+    //       >
+    //         <StyledButtonLeft scale={isMobile ? 'sm' : 'md'}>
+    //           <Text bold fontSize="16px" mr="4px" color="invertedContrast">
+    //             {isMobile ? t('Learn More') : t('Learn More')}
+    //           </Text>
+    //           <OpenNewIcon color="invertedContrast" />
+    //         </StyledButtonLeft>
+    //       </NextLinkFromReactRouter>
+    //     </S.LeftWrapper>
+    //     <RightWrapper>
+    //       {!isMobile && <Image src={v3Board} alt="v3Board" width={141} height={111} placeholder="blur" />}
+    //       {!isMobile && <Image src={v3BgCoinUp} alt="v3BgCoinUp" width={149} height={47} placeholder="blur" />}
+    //       {!isMobile && <Image src={v3BgCoinDown} alt="v3BgCoinUp" width={187} height={75} placeholder="blur" />}
+    //       {!isMobile && <Image src={v3BgBlingBlur} alt="v3BgBlingBlur" width={53} height={55} placeholder="blur" />}
+    //       {!isMobile && <Image src={v3BgBlingNormal} alt="v3BgBlingNormal" width={52} height={48} placeholder="blur" />}
+    //       {isMobile ? (
+    //         <Image src={v3AirdropBunny} alt="v3AirdropBunnyMobile" width={195} height={199} placeholder="blur" />
+    //       ) : (
+    //         <Image src={v3AirdropBunny} alt="v3AirdropBunny" width={290} height={295} placeholder="blur" />
+    //       )}
+    //     </RightWrapper>
+    //   </S.Inner>
+    // </S.Wrapper>
   )
 }
 

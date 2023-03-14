@@ -146,6 +146,7 @@ export default function CurrencySearchModal({
         if (info.velocity.y > MODAL_SWIPE_TO_CLOSE_VELOCITY && onDismiss) onDismiss()
       }}
       ref={wrapperRef}
+      style={{background: '#070707'}}
     >
       <ModalHeader>
         <ModalTitle>

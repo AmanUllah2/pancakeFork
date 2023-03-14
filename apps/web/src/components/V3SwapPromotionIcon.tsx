@@ -28,10 +28,10 @@ const ColoredIconButton = styled(IconButton)`
       background: -webkit-linear-gradient(
         left,
         ${({ theme }) =>
-          theme.isDark
-            ? `rgba(39,38,44, 0) 0%,
+    theme.isDark
+      ? `rgba(39,38,44, 0) 0%,
         rgba(39,38,44, 0) 100%`
-            : `rgba(255, 255, 255, 0) 0%,
+      : `rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.8) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%`}
@@ -71,28 +71,29 @@ export const V3SwapPromotionIcon: React.FC<{ wrapperStyle?: React.CSSProperties 
     manualVisible: mobileCampaignTooltipShow,
   })
   return (
-    <Text style={wrapperStyle}>
-      <ColoredIconButton className="is-shining" variant="text" scale="sm">
-        <TooltipText
-          ref={campaignTargetRef}
-          display="flex"
-          style={{ justifyContent: 'center', textDecoration: 'none' }}
-        >
-          <Text
-            fontSize="20px"
-            onClick={() => {
-              window.open(
-                'https://blog.pancakeswap.finance/articles/participate-in-pancake-swap-v3-launch-claim-135-k-cake-airdrop-and-receive-an-exclusive-nft-for-early-supporters',
-                '_blank',
-                'noreferrer noopener',
-              )
-            }}
-          >
-            🎁
-          </Text>
-        </TooltipText>
-      </ColoredIconButton>
-      {campaignTooltipVisible && campaignTooltip}
-    </Text>
+    <></>
+    // <Text style={wrapperStyle}>
+    //    <ColoredIconButton className="is-shining" variant="text" scale="sm">
+    //     <TooltipText
+    //       ref={campaignTargetRef}
+    //       display="flex"
+    //       style={{ justifyContent: 'center', textDecoration: 'none' }}
+    //     >
+    //       <Text
+    //         fontSize="20px"
+    //         onClick={() => {
+    //           window.open(
+    //             'https://blog.pancakeswap.finance/articles/participate-in-pancake-swap-v3-launch-claim-135-k-cake-airdrop-and-receive-an-exclusive-nft-for-early-supporters',
+    //             '_blank',
+    //             'noreferrer noopener',
+    //           )
+    //         }}
+    //       >
+    //         🎁
+    //       </Text>
+    //     </TooltipText>
+    //   </ColoredIconButton> 
+    //   {campaignTooltipVisible && campaignTooltip}
+    // </Text>
   )
 }
