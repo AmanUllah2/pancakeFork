@@ -14,7 +14,7 @@ export const SMART_ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ETHEREUM]: '',
   [ChainId.GOERLI]: '',
   [ChainId.BSC]: '0x64D74e1EAAe3176744b5767b93B7Bee39Cf7898F',
-  [ChainId.BSC_TESTNET]: '0x226db9b7A7F97D52845EE90E77bD02B4c12F3F14',
+  [ChainId.BSC_TESTNET]: '0xBaFd29F99116f3679588d90f4353C582A1bDdd69',
 }
 
 export function useSmartRouterContract() {
