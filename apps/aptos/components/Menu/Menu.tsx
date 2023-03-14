@@ -59,34 +59,35 @@ export const Menu = ({ children }: { children: ReactNode }) => {
   }, [t])
 
   return (
-    <UIMenu
-      linkComponent={(linkProps) => {
-        return <NextLinkFromReactRouter to={linkProps.href} {...linkProps} prefetch={false} />
-      }}
-      links={menuItems}
-      activeItem={activeMenuItem?.href}
-      isDark={isDark}
-      banner={show ? <PhishingWarningBanner /> : undefined}
-      rightSide={
-        <>
-          <SettingsButton mr="8px" />
-          <NetworkSwitcher />
-          <UserMenu />
-        </>
-      }
-      setLang={setLanguage}
-      footerLinks={getFooterLinks}
-      currentLang={currentLanguage.code}
-      langs={languageList}
-      cakePriceUsd={cakePrice ? Number(cakePrice) : undefined}
-      // @ts-ignore
-      subLinks={activeMenuItem?.hideSubNav || activeSubMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
-      activeSubItem={activeSubMenuItem?.href}
-      toggleTheme={toggleTheme}
-      buyCakeLabel={t('Buy CAKE')}
-      buyCakeLink="https://aptos.pancakeswap.finance/swap?outputCurrency=0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6::oft::CakeOFT"
-    >
-      {children}
-    </UIMenu>
+    <></>
+    // <UIMenu
+    //   linkComponent={(linkProps) => {
+    //     return <NextLinkFromReactRouter to={linkProps.href} {...linkProps} prefetch={false} />
+    //   }}
+    //   links={menuItems}
+    //   activeItem={activeMenuItem?.href}
+    //   isDark={isDark}
+    //   banner={show ? <PhishingWarningBanner /> : undefined}
+    //   rightSide={
+    //     <>
+    //       <SettingsButton mr="8px" />
+    //       <NetworkSwitcher />
+    //       <UserMenu />
+    //     </>
+    //   }
+    //   setLang={setLanguage}
+    //   footerLinks={getFooterLinks}
+    //   currentLang={currentLanguage.code}
+    //   langs={languageList}
+    //   cakePriceUsd={cakePrice ? Number(cakePrice) : undefined}
+    //   // @ts-ignore
+    //   subLinks={activeMenuItem?.hideSubNav || activeSubMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
+    //   activeSubItem={activeSubMenuItem?.href}
+    //   toggleTheme={toggleTheme}
+    //   buyCakeLabel={t('Buy CAKE')}
+    //   buyCakeLink="https://aptos.pancakeswap.finance/swap?outputCurrency=0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6::oft::CakeOFT"
+    // >
+    //   {children}
+    // </UIMenu>
   )
 }

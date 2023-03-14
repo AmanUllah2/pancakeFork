@@ -16,7 +16,7 @@ const MakeProfile: React.FC<React.PropsWithChildren<CompetitionProps>> = ({ onDi
 
   return (
     <>
-      <Heading scale="md" mb="24px">
+      {/* <Heading scale="md" mb="24px">
         {t('Make a profile!')}
       </Heading>
       <Text color="textSubtle">
@@ -24,7 +24,7 @@ const MakeProfile: React.FC<React.PropsWithChildren<CompetitionProps>> = ({ onDi
       </Text>
       <Button mt="24px" width="100%" onClick={handleClick}>
         {t('Make a profile!')}
-      </Button>
+      </Button> */}
     </>
   )
 }
