@@ -7,7 +7,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ETHEREUM]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
   [ChainId.GOERLI]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
-  [ChainId.BSC_TESTNET]: '0x0e508908B640408dC0DCd2AF5454333a173B0EC4',
+  [ChainId.BSC_TESTNET]: '0x8e55B7295DCCC9A5B491234620C97fFB6535dF60',
 }
 
 // used to construct intermediary pairs for trading
@@ -99,7 +99,7 @@ export const BETTER_TRADE_LESS_HOPS_THRESHOLD = new Percent(JSBI.BigInt(50), BIP
 export const ZERO_PERCENT = new Percent('0')
 export const ONE_HUNDRED_PERCENT = new Percent('1')
 
-export const BASE_FEE = new Percent(JSBI.BigInt(25), BIPS_BASE)
+export const BASE_FEE = new Percent(JSBI.BigInt(30), BIPS_BASE)
 export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
 // BNB
