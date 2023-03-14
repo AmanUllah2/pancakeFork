@@ -180,7 +180,7 @@ export const socials = [
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({
-  // code: `en${i}`,
-  // language: `English${i}`,
-  // locale: `Locale${i}`,
+  code: `en${i}`,
+  language: `English${i}`,
+  locale: `Locale${i}`,
 }));
