@@ -118,9 +118,9 @@ export const BCakeBoosterCard = () => {
   })
   return (
     <CardWrapper>
-      <ImageWrapper>
+      {/* <ImageWrapper>
         <Image src={boosterCardImage} alt="boosterCardImage" width={99} height={191} placeholder="blur" />
-      </ImageWrapper>
+      </ImageWrapper> */}
       <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '15px 24px' }}>
           <RocketIcon />
@@ -152,12 +152,12 @@ const CardContent: React.FC = () => {
   if (!account)
     return (
       <Box>
-        <Text color="textSubtle" fontSize={12} bold>
+        {/* <Text color="textSubtle" fontSize={12} bold>
           {t('Connect wallet to view booster')}
-        </Text>
-        <Text color="textSubtle" fontSize={12} mb="16px">
+        </Text> */}
+        {/* <Text color="textSubtle" fontSize={12} mb="16px">
           {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
-        </Text>
+        </Text> */}
         <ConnectWalletButton width="100%" style={{ backgroundColor: theme.colors.textSubtle }} />
       </Box>
     )
@@ -167,9 +167,9 @@ const CardContent: React.FC = () => {
         <Text color="textSubtle" fontSize={12} bold>
           {t('No CAKE locked')}
         </Text>
-        <Text color="textSubtle" fontSize={12} mb="16px">
+        {/* <Text color="textSubtle" fontSize={12} mb="16px">
           {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
-        </Text>
+        </Text> */}
         <NextLink href="/pools" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
             {t('Go to Pool')}
@@ -183,9 +183,9 @@ const CardContent: React.FC = () => {
         <Text color="textSubtle" fontSize={12} bold>
           {t('Locked staking is ended')}
         </Text>
-        <Text color="textSubtle" fontSize={12} mb="16px">
+        {/* <Text color="textSubtle" fontSize={12} mb="16px">
           {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
-        </Text>
+        </Text> */}
         <NextLink href="/pools" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
             {t('Go to Pool')}

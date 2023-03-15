@@ -209,9 +209,9 @@ const Desktop: React.FC<React.PropsWithChildren> = () => {
               openChartPane()
             }}
           >
-            <PowerLinkStyle href="https://chain.link/" external>
+            {/* <PowerLinkStyle href="https://chain.link/" external>
               <img src="/images/powered-by-chainlink.svg" alt="Powered by ChainLink" width="170px" height="48px" />
-            </PowerLinkStyle>
+            </PowerLinkStyle> */}
             <ExpandButtonGroup>
               <TabToggle
                 height="42px"

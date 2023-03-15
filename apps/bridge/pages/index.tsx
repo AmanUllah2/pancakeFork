@@ -76,7 +76,7 @@ function PoweredBy() {
   const { isDark } = useTheme()
   return (
     <Flex py="10px" alignItems="center" justifyContent="center">
-      <Text small color="textSubtle" mr="8px">
+      {/* <Text small color="textSubtle" mr="8px">
         Powered By
       </Text>
       <a href="https://stargate.finance" target="_blank" rel="noreferrer noopener">
@@ -90,7 +90,7 @@ function PoweredBy() {
             filter: isDark ? 'invert(1)' : 'unset',
           }}
         />
-      </a>
+      </a> */}
     </Flex>
   )
 }

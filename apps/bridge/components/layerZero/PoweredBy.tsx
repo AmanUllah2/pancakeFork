@@ -6,7 +6,7 @@ const PoweredBy = () => {
   const { isDark } = useTheme()
   return (
     <Flex py="10px" alignItems="center" justifyContent="center">
-      <Text small color="textSubtle" mr="8px">
+      {/* <Text small color="textSubtle" mr="8px">
         Powered By
       </Text>
       <a href="https://layerzero.network/" target="_blank" rel="noreferrer noopener">
@@ -20,7 +20,7 @@ const PoweredBy = () => {
             filter: isDark ? 'unset' : 'invert(1)',
           }}
         />
-      </a>
+      </a> */}
     </Flex>
   )
 }
