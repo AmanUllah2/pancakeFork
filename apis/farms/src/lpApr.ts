@@ -14,7 +14,8 @@ interface BlockResponse {
   }[]
 }
 
-const STABLESWAP_SUBGRAPH_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-stableswap'
+const STABLESWAP_SUBGRAPH_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/waleed-shafiq/king-king-stableswap'
+// https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-stableswap
 
 const LP_HOLDERS_FEE = 0.0017
 const WEEKS_IN_A_YEAR = 52.1429
@@ -27,7 +28,8 @@ const BLOCKS_CLIENT_WITH_CHAIN = {
 }
 
 const INFO_CLIENT_WITH_CHAIN = {
-  [ChainId.BSC]: 'https://proxy-worker.pancake-swap.workers.dev/bsc-exchange',
+  // [ChainId.BSC]: 'https://proxy-worker.pancake-swap.workers.dev/bsc-exchange',
+  [ChainId.BSC]: 'https://api.thegraph.com/subgraphs/name/waleed-shafiq/king-kong-exchange',
   [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exhange-eth',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.GOERLI]: '',

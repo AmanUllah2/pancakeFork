@@ -10,6 +10,7 @@ import { getDerivedPrices, getDerivedPricesQueryConstructor } from '../queries/g
 import { PairDataTimeWindowEnum } from '../types'
 
 const getTokenDerivedUSDCPrices = async (tokenAddress: string, blocks: Block[], isStableStable?: boolean) => {
+  console.log("tokenAddress, blocks", tokenAddress, blocks)
   const rawPrices: any | undefined = await multiQuery(
     getDerivedPricesQueryConstructor,
     getDerivedPrices(tokenAddress, blocks),
