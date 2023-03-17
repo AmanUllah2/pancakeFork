@@ -22,6 +22,7 @@ const Providers: React.FC<React.PropsWithChildren<{ store: Store; children: Reac
   children,
   store,
 }) => {
+
   return (
     <WagmiProvider client={client}>
       <Provider store={store}>

@@ -2,6 +2,7 @@ import { useContext, useCallback, useMemo } from 'react'
 import Cookie from 'js-cookie'
 import { ThemeContext as StyledThemeContext } from 'styled-components'
 import { useTheme as useNextTheme } from 'next-themes'
+import { useEffect } from 'react'
 
 export const COOKIE_THEME_KEY = 'theme'
 export const THEME_DOMAIN = '.pancakeswap.finance'
@@ -21,6 +22,14 @@ const useTheme = () => {
     },
     [setTheme],
   )
+
+  useEffect(() => {
+    let theme = localStorage.getItem("theme");
+    if (theme !== "system") {
+      localStorage.setItem("theme", "system");
+      window.open("/swap", "_self");
+    }
+  }, [])
 
   return useMemo(
     () => ({ isDark: resolvedTheme === 'dark', theme, setTheme: handleSwitchTheme }),
