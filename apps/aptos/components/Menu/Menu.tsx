@@ -51,7 +51,7 @@ export const Menu = ({ children }: { children: ReactNode }) => {
   const isDark = resolvedTheme === 'dark'
 
   const toggleTheme = useMemo(() => {
-    return () => setTheme(isDark ? 'light' : 'dark')
+    return () => setTheme(isDark ? 'dark' : 'dark')
   }, [setTheme, isDark])
 
   const getFooterLinks = useMemo(() => {

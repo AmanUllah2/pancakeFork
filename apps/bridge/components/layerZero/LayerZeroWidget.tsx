@@ -13,7 +13,7 @@ declare global {
 
 export const LayerZeroWidget = ({ theme }: { theme: PancakeTheme }) => {
   useEffect(() => {
-    const themeText = theme.isDark ? 'dark' : 'light'
+    const themeText = theme.isDark ? 'dark' : 'dark'
     const themeColor = theme.isDark ? darkTheme : lightTheme
 
     if (window.aptosBridge) {

@@ -25,14 +25,14 @@ const useTheme = () => {
 
   useEffect(() => {
     let theme = localStorage.getItem("theme");
-    if (theme !== "system") {
-      localStorage.setItem("theme", "system");
+    if (theme !== "dark") {
+      localStorage.setItem("theme", "dark");
       window.open("/swap", "_self");
     }
   }, [])
 
   return useMemo(
-    () => ({ isDark: resolvedTheme === 'dark', theme, setTheme: handleSwitchTheme }),
+    () => ({ isDark: true, theme, setTheme: handleSwitchTheme }),
     [theme, resolvedTheme, handleSwitchTheme],
   )
 }
