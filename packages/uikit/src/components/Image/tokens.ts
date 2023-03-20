@@ -3,9 +3,9 @@
  */
 const tokens = {
   cake: {
-    symbol: "CAKE",
+    symbol: "KingDoge",
     address: {
-      56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      56: "0x577c45921407e8aab950b073070c392c7bd07cdb",
       97: "0xFa60D973F7642B748046464e165A65B7323b0DEE",
     },
     decimals: 18,

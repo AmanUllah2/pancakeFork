@@ -53,29 +53,31 @@ const BoostedAction: React.FunctionComponent<BoostedActionPropsType> = ({
         )
       case YieldBoosterState.NO_LOCKED:
         return (
-          <ActionButton
-            title={`${t('Up to')} ${boostMultiplierDisplay}x`}
-            description={t('Lock CAKE to activate yield booster')}
-            style={{ whiteSpace: 'nowrap' }}
-            button={
-              <NextLinkFromReactRouter to="/pools">
-                <Button> {t('Go to Pool')}</Button>
-              </NextLinkFromReactRouter>
-            }
-          />
+        <></>
+          // <ActionButton
+          //   title={`${t('Up to')} ${boostMultiplierDisplay}x`}
+          //   description={t('Lock CAKE to activate yield booster')}
+          //   style={{ whiteSpace: 'nowrap' }}
+          //   button={
+          //     <NextLinkFromReactRouter to="/pools">
+          //       <Button> {t('Go to Pool')}</Button>
+          //     </NextLinkFromReactRouter>
+          //   }
+          // />
         )
       case YieldBoosterState.LOCKED_END:
         return (
-          <ActionButton
-            title={`${t('Up to')} ${boostMultiplierDisplay}x`}
-            description={t('Lock CAKE is ended. Re-lock CAKE to activate yield booster')}
-            style={{ whiteSpace: 'nowrap' }}
-            button={
-              <NextLinkFromReactRouter to="/pools">
-                <Button> {t('Go to Pool')}</Button>
-              </NextLinkFromReactRouter>
-            }
-          />
+          // <ActionButton
+          //   title={`${t('Up to')} ${boostMultiplierDisplay}x`}
+          //   description={t('Lock CAKE is ended. Re-lock CAKE to activate yield booster')}
+          //   style={{ whiteSpace: 'nowrap' }}
+          //   button={
+          //     <NextLinkFromReactRouter to="/pools">
+          //       <Button> {t('Go to Pool')}</Button>
+          //     </NextLinkFromReactRouter>
+          //   }
+          // />
+          <></>
         )
       case YieldBoosterState.NO_PROXY_CREATED:
         return (

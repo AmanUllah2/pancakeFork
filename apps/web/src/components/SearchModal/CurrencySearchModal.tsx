@@ -173,26 +173,28 @@ export default function CurrencySearchModal({
         ) : modalView === CurrencyModalView.importToken && importToken ? (
           <ImportToken tokens={[importToken]} handleCurrencySelect={handleCurrencySelect} />
         ) : modalView === CurrencyModalView.importList && importList && listURL ? (
-          <ImportList
-            onAddList={handleAddList}
-            addError={addError}
-            badSrcs={BAD_SRCS}
-            listURL={listURL}
-            listLogoURI={importList?.logoURI}
-            listName={importList?.name}
-            listTokenLength={importList?.tokens.length}
-          />
+          <></>
+          // <ImportList
+          //   onAddList={handleAddList}
+          //   addError={addError}
+          //   badSrcs={BAD_SRCS}
+          //   listURL={listURL}
+          //   listLogoURI={importList?.logoURI}
+          //   listName={importList?.name}
+          //   listTokenLength={importList?.tokens.length}
+          // />
         ) : modalView === CurrencyModalView.manage ? (
-          <Manage
-            setModalView={setModalView}
-            setImportToken={setImportToken}
-            setImportList={setImportList}
-            setListUrl={setListUrl}
-          />
+          // <Manage
+          //   setModalView={setModalView}
+          //   setImportToken={setImportToken}
+          //   setImportList={setImportList}
+          //   setListUrl={setListUrl}
+          // />
+          <></>
         ) : (
           ''
         )}
-        {modalView === CurrencyModalView.search && (
+        {/* {modalView === CurrencyModalView.search && (
           <Footer>
             <Button
               scale="sm"
@@ -203,7 +205,7 @@ export default function CurrencySearchModal({
               {t('Manage Tokens')}
             </Button>
           </Footer>
-        )}
+        )} */}
       </StyledModalBody>
     </StyledModalContainer>
   )

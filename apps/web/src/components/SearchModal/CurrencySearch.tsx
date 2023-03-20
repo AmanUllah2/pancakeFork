@@ -238,7 +238,7 @@ function CurrencySearch({
   return (
     <>
       <AutoColumn gap="16px">
-        {showSearchInput && (
+        {/* {showSearchInput && (
           <Row>
             <Input
               id="token-search-input"
@@ -251,7 +251,7 @@ function CurrencySearch({
               onKeyDown={handleEnter}
             />
           </Row>
-        )}
+        )} */}
         {showCommonBases && (
           <CommonBases
             chainId={chainId}
@@ -261,7 +261,7 @@ function CurrencySearch({
           />
         )}
       </AutoColumn>
-      {getCurrencyListRows()}
+      {/* {getCurrencyListRows()} */}
     </>
   )
 }

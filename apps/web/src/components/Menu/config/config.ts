@@ -55,7 +55,7 @@ const config: (
         },
         {
           label: t('Limit'),
-          href: '/limit-orders',
+          href: '/limit-orders?outputCurrency=0x577C45921407E8aab950b073070c392c7BD07cdB',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/decorations/3d-coin.png',
         },

@@ -121,7 +121,7 @@ export const BCakeBoosterCard = () => {
       {/* <ImageWrapper>
         <Image src={boosterCardImage} alt="boosterCardImage" width={99} height={191} placeholder="blur" />
       </ImageWrapper> */}
-      <Card p="0px" style={{ zIndex: 1 }}>
+      {/* <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '15px 24px' }}>
           <RocketIcon />
           <Text fontSize={22} bold color="text" marginBottom="-12px" display="inline-block" ml="7px">
@@ -136,7 +136,7 @@ export const BCakeBoosterCard = () => {
           <BCakeProxyCakeBalanceCard />
           <CardContent />
         </StyledCardFooter>
-      </Card>
+      </Card> */}
     </CardWrapper>
   )
 }
@@ -163,35 +163,37 @@ const CardContent: React.FC = () => {
     )
   if (!locked)
     return (
-      <Box width="100%">
-        <Text color="textSubtle" fontSize={12} bold>
-          {t('No CAKE locked')}
-        </Text>
-        {/* <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
-        </Text> */}
-        <NextLink href="/pools" passHref>
-          <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to Pool')}
-          </Button>
-        </NextLink>
-      </Box>
+      <></>
+      // <Box width="100%">
+      //   <Text color="textSubtle" fontSize={12} bold>
+      //     {t('No CAKE locked')}
+      //   </Text>
+      //   {/* <Text color="textSubtle" fontSize={12} mb="16px">
+      //     {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
+      //   </Text> */}
+      //   <NextLink href="/pools" passHref>
+      //     <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
+      //       {t('Go to Pool')}
+      //     </Button>
+      //   </NextLink>
+      // </Box>
     )
   if (lockedEnd === '0' || new Date() > new Date(parseInt(lockedEnd) * 1000))
     return (
-      <Box>
-        <Text color="textSubtle" fontSize={12} bold>
-          {t('Locked staking is ended')}
-        </Text>
-        {/* <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
-        </Text> */}
-        <NextLink href="/pools" passHref>
-          <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to Pool')}
-          </Button>
-        </NextLink>
-      </Box>
+      <></>
+      // <Box>
+      //   <Text color="textSubtle" fontSize={12} bold>
+      //     {t('Locked staking is ended')}
+      //   </Text>
+      //   {/* <Text color="textSubtle" fontSize={12} mb="16px">
+      //     {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
+      //   </Text> */}
+      //   <NextLink href="/pools" passHref>
+      //     <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
+      //       {t('Go to Pool')}
+      //     </Button>
+      //   </NextLink>
+      // </Box>
     )
   if (!proxyCreated) {
     return (

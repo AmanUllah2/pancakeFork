@@ -191,7 +191,7 @@ const ActionPanel: React.FunctionComponent<React.PropsWithChildren<ActionPanelPr
             </>
           )}
         </ValueContainer>
-        {isActive && (
+        {/* {isActive && (
           <Flex mb="2px" justifyContent={alignLinksToRight ? 'flex-end' : 'flex-start'}>
             <StakeContainer>
               <StyledLinkExternal href={`/add/${liquidityUrlPathParts}`}>
@@ -207,7 +207,7 @@ const ActionPanel: React.FunctionComponent<React.PropsWithChildren<ActionPanelPr
           <StyledLinkExternal isBscScan href={bsc}>
             {t('View Contract')}
           </StyledLinkExternal>
-        </Flex>
+        </Flex> */}
       </InfoContainer>
       <ActionContainer>
         {shouldUseProxyFarm ? (

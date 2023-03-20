@@ -13,7 +13,7 @@ export const SEO: DefaultSeoProps = {
   openGraph: {
     title: '🥞 KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
     description:
-      'The most popular AMM on BSC! Earn CAKE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by KingKongDoge), NFTs, and more, on a platform you can trust.',
+      'The most popular AMM on BSC! Earn CAKE through yield farming or win it in the Lottery, then stake it in KingKong Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by KingKongDoge), NFTs, and more, on a platform you can trust.',
     images: [{ url: 'https://i.ibb.co/HV1DFBX/Screenshot-2023-03-15-at-12-09-16-PM.png' }],
   },
 }

@@ -407,7 +407,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
             </Flex>
           </ViewControls>
           <FilterContainer>
-            <LabelWrapper>
+            {/* <LabelWrapper>
               <Text textTransform="uppercase" color="textSubtle" fontSize="12px" bold>
                 {t('Sort by')}
               </Text>
@@ -446,7 +446,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                 {t('Search')}
               </Text>
               <SearchInput initialValue={normalizedUrlSearch} onChange={handleChangeQuery} placeholder="Search Farms" />
-            </LabelWrapper>
+            </LabelWrapper> */}
           </FilterContainer>
         </ControlContainer>
         {isInactive && (

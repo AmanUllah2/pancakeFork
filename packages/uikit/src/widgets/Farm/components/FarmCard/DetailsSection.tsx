@@ -59,12 +59,12 @@ export const DetailsSection: React.FC<React.PropsWithChildren<ExpandableSectionP
         <Text>{t("Total Liquidity")}:</Text>
         {totalValueFormatted ? <Text>{totalValueFormatted}</Text> : <Skeleton width={75} height={25} />}
       </Flex>
-      {!removed && (
+      {/* {!removed && (
         <Flex mb="2px" justifyContent={alignLinksToRight ? "flex-end" : "flex-start"}>
           <StyledLinkExternal href={addLiquidityUrl}>{t("Get %symbol%", { symbol: lpLabel })}</StyledLinkExternal>
         </Flex>
-      )}
-      {infoAddress && (
+      )} */}
+      {/* {infoAddress && (
         <Flex mb="2px" justifyContent={alignLinksToRight ? "flex-end" : "flex-start"}>
           <StyledLinkExternal href={infoAddress}>{t("See Pair Info")}</StyledLinkExternal>
         </Flex>
@@ -75,7 +75,7 @@ export const DetailsSection: React.FC<React.PropsWithChildren<ExpandableSectionP
             {t("View Contract")}
           </StyledLinkExternal>
         </Flex>
-      )}
+      )} */}
     </Wrapper>
   );
 };
