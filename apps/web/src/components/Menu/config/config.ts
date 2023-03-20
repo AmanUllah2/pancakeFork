@@ -87,12 +87,12 @@ const config: (
       image: '/images/decorations/pe2.png',
       items: [
         {
-          label: t('Farms'),
-          href: '/farms',
+          label: t('Farms (Coming Soon)'),
+          href: '/swap',
         },
         {
-          label: t('Pools'),
-          href: '/pools',
+          label: t('Pools (Coming Soon)'),
+          href: '/swap',
           supportChainIds: SUPPORT_ONLY_BSC,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),

@@ -21,7 +21,8 @@ const NoOrdersMessage: React.FC<React.PropsWithChildren<{ orderCategory: ORDER_C
 
   return (
     <Flex p="24px" justifyContent="center" alignItems="center" flexDirection="column">
-      <BunnyPlaceholderIcon width={64} />
+      {/* <BunnyPlaceholderIcon width={64} /> */}
+      <img src="https://i.ibb.co/jwYF1G0/Group-1.png" width={64} alt="" />
       <Text color="textDisabled">{NoOrdersText}</Text>
     </Flex>
   )

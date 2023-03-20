@@ -34,10 +34,10 @@ export const modalWrapperClass = style([
       marginBottom: 0,
     },
     md: {
-      height: '490px',
+      // height: '490px', 
     },
     lg: {
-      width: '792px',
+      // width: '792px',
     },
   }),
 ])
@@ -48,7 +48,7 @@ export const desktopWalletSelectionClass = style(
       maxWidth: '100%',
     },
     sm: {
-      maxWidth: '360px',
+      // maxWidth: '360px',
     },
     lg: {
       maxWidth: '408px',

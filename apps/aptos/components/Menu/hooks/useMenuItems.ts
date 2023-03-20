@@ -50,12 +50,12 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     image: '/images/decorations/pe2.png',
     items: [
       {
-        label: t('Farms'),
-        href: '/farms',
+        label: t('Farms (Coming Soon)'),
+        // href: '/farms',
       },
       {
-        label: t('Pools'),
-        href: '/pools',
+        label: t('Pools (Coming Soon)'),
+        // href: '/pools',
       },
     ],
   },
