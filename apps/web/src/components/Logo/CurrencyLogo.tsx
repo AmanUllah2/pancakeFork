@@ -7,7 +7,7 @@ import { useHttpLocations } from '@pancakeswap/hooks'
 import { BAD_SRCS } from './constants'
 import getTokenLogoURL from '../../utils/getTokenLogoURL'
 
-const StyledLogo = styled(TokenLogo)<{ size: string }>`
+const StyledLogo = styled(TokenLogo) <{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   border-radius: 50%;
@@ -56,6 +56,12 @@ export default function CurrencyLogo({
   }
 
   return (
-    <StyledLogo badSrcs={BAD_SRCS} size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
+    <>
+      {currency?.symbol?.slice(0, 8) !== "KingKong" ?
+        <StyledLogo badSrcs={BAD_SRCS} size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
+        :
+        <img alt="" src="https://i.ibb.co/xhpCgkD/image-1.png" width={24} style={{ marginRight: '8px' }} />
+      }
+    </>
   )
 }

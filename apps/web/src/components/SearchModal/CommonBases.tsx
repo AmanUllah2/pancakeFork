@@ -66,6 +66,17 @@ export default function CommonBases({
         )}
       </AutoRow>
       <RowWrapper>
+        {(chainId ? SUGGESTED_BASES[chainId] || [] : []).map((token: Token) => {
+          const selected = selectedCurrency?.equals(token)
+          return (
+            <ButtonWrapper key={`buttonBase#${token.address}`}>
+              <BaseWrapper onClick={() => !selected && onSelect(token)} disable={selected}>
+                <CurrencyLogo currency={token} style={{ marginRight: 8, borderRadius: '50%' }} />
+                <Text>{token.symbol}</Text>
+              </BaseWrapper>
+            </ButtonWrapper>
+          )
+        })}
         <ButtonWrapper>
           <BaseWrapper
             onClick={() => {
@@ -79,17 +90,6 @@ export default function CommonBases({
             <Text>{native?.symbol}</Text>
           </BaseWrapper>
         </ButtonWrapper>
-        {(chainId ? SUGGESTED_BASES[chainId] || [] : []).map((token: Token) => {
-          const selected = selectedCurrency?.equals(token)
-          return (
-            <ButtonWrapper key={`buttonBase#${token.address}`}>
-              <BaseWrapper onClick={() => !selected && onSelect(token)} disable={selected}>
-                <CurrencyLogo currency={token} style={{ marginRight: 8, borderRadius: '50%' }} />
-                <Text>{token.symbol}</Text>
-              </BaseWrapper>
-            </ButtonWrapper>
-          )
-        })}
       </RowWrapper>
     </AutoColumn>
   )

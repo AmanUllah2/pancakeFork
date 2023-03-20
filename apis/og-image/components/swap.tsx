@@ -34,7 +34,7 @@ export function SwapOgImage({
       >
         {inputSymbol}/{outputSymbol}
       </div>
-      {inputImage && (
+      {/* {inputImage && (
         <div
           style={{
             background: 'linear-gradient(227.56deg, #FFFFFF 8.85%, rgba(255, 255, 255, 0) 104.08%)',
@@ -52,8 +52,8 @@ export function SwapOgImage({
         >
           <img src={inputImage} width={125} height={125} alt={inputSymbol} />
         </div>
-      )}
-      {outputImage && (
+      )} */}
+      {/* {outputImage && (
         <div
           style={{
             background: 'linear-gradient(342.5deg, #FFFFFF 3.21%, rgba(255, 255, 255, 0) 112.29%)',
@@ -71,7 +71,7 @@ export function SwapOgImage({
         >
           <img src={outputImage} width={125} height={125} alt={outputSymbol} />
         </div>
-      )}
+      )} */}
     </div>
   )
 }

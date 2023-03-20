@@ -219,7 +219,7 @@ export default function StableSwapForm() {
 
   return (
     <>
-      <CurrencyInputHeader
+      {/* <CurrencyInputHeader
         title={
           <Flex>
             {t('StableSwap')}
@@ -232,7 +232,7 @@ export default function StableSwapForm() {
         subtitle={t('Trade tokens in an instant')}
         hasAmount={hasAmount}
         onRefreshPrice={onRefreshPrice}
-      />
+      /> */}
       <Wrapper id="swap-page" style={{ minHeight: '412px' }}>
         <AutoColumn gap="sm">
           <CurrencyInputPanel

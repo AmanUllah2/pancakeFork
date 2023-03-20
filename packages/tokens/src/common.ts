@@ -6,7 +6,7 @@ export const CAKE_MAINNET = new ERC20Token(
   18,
   'KingKong Doge',
   'KingKong Doge Token',
-  'https://pancakeswap.finance/',
+  'https://swap.kingkongdoge.io/',
 )
 
 export const CAKE_TESTNET = new ERC20Token(

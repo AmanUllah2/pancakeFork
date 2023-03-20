@@ -9,7 +9,7 @@ const tokens = {
       97: "0xFa60D973F7642B748046464e165A65B7323b0DEE",
     },
     decimals: 18,
-    projectLink: "https://pancakeswap.finance/",
+    projectLink: "https://swap.kingkongdoge.io/",
   },
   txl: {
     symbol: "TXL",
