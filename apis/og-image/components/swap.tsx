@@ -18,7 +18,7 @@ export function SwapOgImage({
         display: 'flex',
       }}
     >
-      <img src={getTemplatePath('swap')} width={800} height={450} alt="swap-background" />
+      {/* <img src={getTemplatePath('swap')} width={800} height={450} alt="swap-background" />
       <div
         style={{
           display: 'flex',
@@ -33,7 +33,7 @@ export function SwapOgImage({
         }}
       >
         {inputSymbol}/{outputSymbol}
-      </div>
+      </div> */}
       {/* {inputImage && (
         <div
           style={{

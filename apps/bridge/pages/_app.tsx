@@ -70,9 +70,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.png" /> */}
         <meta
           name="twitter:description"
-          content="The most popular AMM on BSC!"
+          content="ntroducing the KingKong Doge Swap!"
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <meta name="twitter:title" content="KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)" />
         <title>Bridge | KingKongDoge</title>
       </Head>
