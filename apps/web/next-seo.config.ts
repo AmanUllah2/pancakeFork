@@ -13,7 +13,7 @@ export const SEO: DefaultSeoProps = {
   openGraph: {
     title: 'KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
     description:
-      'The most popular AMM on BSC by user count!',
+      'Introducing the KingKong Doge Swap!',
     // images: [{ url: 'https://assets.pancakeswap.finance/web/og/hero.jpg' }],
   },
 }

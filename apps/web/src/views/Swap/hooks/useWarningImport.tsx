@@ -47,17 +47,18 @@ export default function useWarningImport() {
       : []
   }, [chainId, defaultTokens, isWrongNetwork, loadedTokenList, urlLoadedTokens])
 
-  const [onPresentSwapWarningModal] = useModal(<SwapWarningModal swapCurrency={swapWarningCurrency} />, false)
-  const [onPresentImportTokenWarningModal] = useModal(
-    <ImportTokenWarningModal tokens={importTokensNotInDefault} onCancel={() => router.push('/swap')} />,
-  )
+  // const [onPresentSwapWarningModal] = useModal(<SwapWarningModal swapCurrency={swapWarningCurrency} />, false)
+  // const [onPresentImportTokenWarningModal] = useModal(
+  //   // <ImportTokenWarningModal tokens={importTokensNotInDefault} onCancel={() => router.push('/swap')} />,
+  //   <></>
+  // )
 
-  useEffect(() => {
-    if (swapWarningCurrency) {
-      onPresentSwapWarningModal()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [swapWarningCurrency])
+  // useEffect(() => {
+  //   if (swapWarningCurrency) {
+  //     onPresentSwapWarningModal()
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [swapWarningCurrency])
 
   const swapWarningHandler = useCallback((currencyInput) => {
     const showSwapWarning = shouldShowSwapWarning(currencyInput)
@@ -68,12 +69,12 @@ export default function useWarningImport() {
     }
   }, [])
 
-  useEffect(() => {
-    if (importTokensNotInDefault.length > 0) {
-      onPresentImportTokenWarningModal()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [importTokensNotInDefault.length])
+  // useEffect(() => {
+  //   if (importTokensNotInDefault.length > 0) {
+  //     onPresentImportTokenWarningModal()
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [importTokensNotInDefault.length])
 
   return swapWarningHandler
 }

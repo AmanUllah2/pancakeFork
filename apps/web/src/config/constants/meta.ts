@@ -6,7 +6,7 @@ import { ASSET_CDN } from './endpoints'
 export const DEFAULT_META: PageMeta = {
   title: 'KingKongDoge',
   description:
-    'The most popular AMM on BSC by user count!',
+    'Introducing the KingKong Doge Swap!',
   // image: `https://i.ibb.co/HV1DFBX/Screenshot-2023-03-15-at-12-09-16-PM.png`,
 }
 
@@ -73,8 +73,8 @@ export const getCustomMeta = memoize(
     if (pathMetadata) {
       return {
         title: `${pathMetadata.title}`,
-        ...(pathMetadata.description && { description: pathMetadata.description }),
-        image: pathMetadata.image,
+        // ...(pathMetadata.description && { description: pathMetadata.description })
+        // image: pathMetadata.image,
       }
     }
     return null
