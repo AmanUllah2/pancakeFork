@@ -171,7 +171,8 @@ export default function CurrencySearchModal({
             tokensToShow={tokensToShow}
           />
         ) : modalView === CurrencyModalView.importToken && importToken ? (
-          <ImportToken tokens={[importToken]} handleCurrencySelect={handleCurrencySelect} />
+          // <ImportToken tokens={[importToken]} handleCurrencySelect={handleCurrencySelect} />
+          <></>
         ) : modalView === CurrencyModalView.importList && importList && listURL ? (
           <></>
           // <ImportList

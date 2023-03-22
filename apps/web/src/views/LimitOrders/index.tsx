@@ -83,19 +83,20 @@ const LimitOrders = () => {
     )
   }, [defaultTokens, urlLoadedTokens, chainId])
 
-  const [onPresentImportTokenWarningModal] = useModal(
-    <ImportTokenWarningModal tokens={importTokensNotInDefault} onCancel={() => router.push('/limit-orders')} />,
-    false,
-    false,
-    'limitOrderTokenWarningModal',
-  )
+  // const [onPresentImportTokenWarningModal] = useModal(
+  //   // <ImportTokenWarningModal tokens={importTokensNotInDefault} onCancel={() => router.push('/limit-orders')} />,
+  //   <></>,
+  //   false,
+  //   false,
+  //   'limitOrderTokenWarningModal',
+  // )
 
-  useEffect(() => {
-    if (importTokensNotInDefault.length > 0) {
-      onPresentImportTokenWarningModal()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [importTokensNotInDefault.length])
+  // useEffect(() => {
+  //   if (importTokensNotInDefault.length > 0) {
+  //     onPresentImportTokenWarningModal()
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [importTokensNotInDefault.length])
 
   // TODO: fiat values
 
