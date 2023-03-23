@@ -81,7 +81,7 @@ const config: (
     },
     {
       label: t('Earn'),
-      href: '/farms',
+      href: '/swap',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
