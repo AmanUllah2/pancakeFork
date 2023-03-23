@@ -6,7 +6,8 @@ import { ASSET_CDN } from './endpoints'
 export const DEFAULT_META: PageMeta = {
   title: 'KingKongDoge',
   description:
-    'Introducing the KingKong Doge Swap!',
+    // 'Introducing the KingKong Doge Swap!',
+    'KingKong DOGE Swap, the ultimate decentralized exchange that offers advanced liquidity, swapping, farming, and pooling options. Join the exclusive community of KingKong DOGE and swap, farm, and pool to earn rewards while enjoying a seamless user experience.'
   // image: `https://i.ibb.co/HV1DFBX/Screenshot-2023-03-15-at-12-09-16-PM.png`,
 }
 
