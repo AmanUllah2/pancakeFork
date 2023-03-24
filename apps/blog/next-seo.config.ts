@@ -1,8 +1,8 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: '%s | KingKongDoge',
-  defaultTitle: 'Blog | KingKongDoge',
+  titleTemplate: 'KingKongDoge',
+  defaultTitle: 'KingKongDoge',
   description:
     'Cheaper and faster than Uniswap? Discover KingKongDoge, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.',
   twitter: {
@@ -11,9 +11,9 @@ export const SEO: DefaultSeoProps = {
     site: '@KingKongDoge',
   },
   openGraph: {
-    title: '🥞 KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
+    title: 'KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
     description:
-      'The most popular AMM on BSC! Earn CAKE through yield farming or win it in the Lottery, then stake it in KingKong Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by KingKongDoge), NFTs, and more, on a platform you can trust.',
+      'KingKong DOGE Swap, the ultimate decentralized exchange that offers advanced liquidity, swapping, farming, and pooling options. Join the exclusive community of KingKong DOGE and swap, farm, and pool to earn rewards while enjoying a seamless user experience.',
     images: [{ url: 'https://i.ibb.co/HV1DFBX/Screenshot-2023-03-15-at-12-09-16-PM.png' }],
   },
 }

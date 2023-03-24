@@ -1,19 +1,19 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: '%s | PancakeSwap',
-  defaultTitle: 'PancakeSwap',
+  titleTemplate: 'KingKongDoge',
+  defaultTitle: 'KingKongDoge',
   description:
-    'The most popular AMM DEX on BSC is now on Aptos! Swap your favourite tokens instantly and provide liquidity to start earning from trading fees. Earn CAKE through yield farming, and stake them to earn more tokens, or use them to buy new tokens in initial farm offerings—all on a platform you can trust.',
+    'Cheaper and faster than Uniswap? Discover KingKongDoge, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.',
   twitter: {
     cardType: 'summary_large_image',
-    handle: '@PancakeSwap',
-    site: '@PancakeSwap',
+    handle: '@KingKongDoge',
+    site: '@KingKongDoge',
   },
   openGraph: {
-    title: '🥞 PancakeSwap - The most popular DeFi exchange on BSC, now on Aptos',
+    title: 'KingKongDoge - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
     description:
-      'The most popular AMM on BSC is now on Aptos! Swap your favourite tokens instantly and provide liquidity to start earning from trading fees. Earn CAKE through yield farming, and stake them to earn more tokens, or use them to buy new tokens in initial farm offerings—all on a platform you can trust.',
-    images: [{ url: 'https://aptos.pancakeswap.finance/images/hero.jpeg' }],
+      'KingKong DOGE Swap, the ultimate decentralized exchange that offers advanced liquidity, swapping, farming, and pooling options. Join the exclusive community of KingKong DOGE and swap, farm, and pool to earn rewards while enjoying a seamless user experience.',
+    // images: [{ url: 'https://aptos.pancakeswap.finance/images/hero.jpeg' }],
   },
 }
