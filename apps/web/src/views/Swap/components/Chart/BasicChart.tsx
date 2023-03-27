@@ -78,7 +78,7 @@ const BasicChart = ({
       >
         <Flex flexDirection="column" pt="12px">
           <PairPriceDisplay
-            value={pairPrices?.length > 0 && valueToDisplay}
+            value={pairPrices?.length > 0 ? valueToDisplay : 0.0001}
             inputSymbol={inputCurrency?.symbol}
             outputSymbol={outputCurrency?.symbol}
           >
