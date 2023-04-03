@@ -15,6 +15,7 @@ export enum ConnectorNames {
   WalletLink = 'coinbaseWallet',
   Ledger = 'ledger',
   TrustWallet = 'trustWallet',
+  OKXWallet="OKXWallet"
 }
 
 const delay = (t: number) => new Promise((resolve) => setTimeout(resolve, t))
@@ -192,6 +193,12 @@ const walletsConfig = ({
       title: 'Ledger',
       icon: '/images/wallets/ledger.png',
       connectorId: ConnectorNames.Ledger,
+    },
+    {
+      id: 'coinbase',
+      title: 'OKX Wallet',
+      icon: '/images/wallets/okx.png',
+      connectorId: ConnectorNames.Injected,
     },
   ]
 }
