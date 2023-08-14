@@ -6,7 +6,7 @@ import { ChainMap, ChainTokenList } from '../types'
 export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ETHEREUM]: '0x3BC722f252C7bAE2f55647e49aDcB9d33Ff6eBcC',
   [ChainId.GOERLI]: '0x3BC722f252C7bAE2f55647e49aDcB9d33Ff6eBcC',
-  [ChainId.BSC]: '0xb5A75b1DDb571a26B7794D78868CDdC23A1CD541',
+  [ChainId.BSC]: '0x72c8919c7fab199e9ca60272207b7e8f10c7c1fe',
   [ChainId.BSC_TESTNET]: '0x8e55B7295DCCC9A5B491234620C97fFB6535dF60',
 }
 
