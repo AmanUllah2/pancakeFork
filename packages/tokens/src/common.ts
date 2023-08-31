@@ -2,7 +2,7 @@ import { ChainId, ERC20Token } from '@pancakeswap/sdk'
 
 export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
-  '0x577c45921407e8aab950b073070c392c7bd07cdb',
+  '0xA60Dad644BE617d4380Ef2a03f3075Ebbc9d0770',
   18,
   'KingKong Doge',
   'KingKong Doge Token',
